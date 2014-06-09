@@ -12,10 +12,10 @@ $('form').submit(function() {
     var input_value = $('input').val();
     var markup = [];
       markup.push (
-        '<li class="new-item">',
-        '<a class="checkbox" href="#"></a>',
-        input_value,
-        '<a class="remove" href="#"></a>',
+        '<li>',
+        '<a class="checkbox" href="#">checkbox</a>',
+        '<span class="new-list-item">' + input_value + '</span>',
+        '<a class="remove" href="#">remove</a>',
         '</li>');
 
     $('#list-nav').prepend(markup.join(''));
@@ -43,7 +43,8 @@ $('#list-nav').click(function(e) {
     if (parent.hasClass('completed')) {
       parent.removeClass('completed');
     }
-    else { parent.addClass('completed');}
+    else { parent.addClass('completed');
+  };
   };
 });
 
