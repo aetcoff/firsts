@@ -35,9 +35,9 @@ html, body {
 header {
   margin: 0 auto;
   width: 500px;
-  height: 80px;
+  height: 71px;
   border-radius: 5px 5px 0 0;
-  background: #fff;
+  background: #414242;
   border-bottom: 1px solid #EEECEC;
   display: inline-block;
   overflow: hidden;
@@ -46,7 +46,7 @@ header {
 
 #search-icon {
   float: left;
-  margin-top: 18px;
+  margin-top: 12px;
   margin-right: 6px;
   padding-left: 63px;
   width: 38px;
@@ -58,15 +58,17 @@ header {
 #logo {
   float: left;
   font-size: 40px;
-  color: #333;
+  color: #fff;
   font-family: 'Sofia', cursive;
-  padding-left: 106px;
-  margin-top: 4px;
+  padding-left: 95px;
+  margin-top: 1px;
+  text-transform: lowercase;
+  font-weight: 100;
 }
 
 #add-new-icon {
   float: right;
-  margin-top: 21px;
+  margin-top: 15px;
   margin-right: -29px;
   padding-left: 71px;
   width: 36px;
@@ -75,16 +77,24 @@ header {
   background: url('images/images.png') no-repeat -100px -34px;
 }
 
+#add-new-icon.hover {
+  float: right;
+  margin-top: 15px;
+  margin-right: -29px;
+  padding-left: 71px;
+  width: 36px;
+  height: 39px;
+  text-indent: -9999px;
+  background: url('images/images.png') no-repeat -206px -34px;
+ }
 
 /**************MAIN LIST**************/
 
-/*nav {
-  padding-bottom: 80px;
-}
-*/
+
 #list-nav {
-   margin: 1px 0 0 -55px;
+   margin: -3px 0 0 0;
    height: auto;
+   background-color: #fff;
 }
 
 #list-nav li {
@@ -93,16 +103,16 @@ header {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-size: 42px;
-  color: #5dc6dc;
+  color: #00a8e4;
   text-indent: 20px;
   padding: 9px 0px 0 0px;
   display: inline-block;
 }
 
 .checkbox {
-  background: url('images/images.png') no-repeat -32px -338px;
-  margin-top: 16px;
-  margin-left: 2px;
+  background: url('images/images.png') no-repeat -32px -339px;
+  margin-top: 15px;
+  margin-left: -48px;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -113,7 +123,7 @@ header {
 
 .new-list-item {
   display: inline-block;
-  margin-left: 31px;
+  margin-left: -14px;
 }
 
 .remove {
@@ -123,7 +133,7 @@ header {
   height: 30px;
   float: right;
   margin-top: 14px;
-  margin-right: 8px;
+  margin-right: 62px;
   text-indent: -9999px;
 
 }
@@ -165,10 +175,10 @@ header {
 }
 
 .completed .checkbox {
- background-position: -127px -338px;
- margin-left: 3px;
- width: 37px;
- height: 30px;
+  background-position: -133px -339px;
+  margin-left: -41px;
+  width: 37px;
+  height: 30px;
 }
 
 
@@ -176,7 +186,7 @@ header {
 #add-new-container {
   width: 100%;
   height: 73px;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   display: none;
 }
 
@@ -184,6 +194,7 @@ header {
   width: 75%;
   height: 25px;
   background: #fff;
+  border: 2px solid #aece24;
   display: inline-block;
   float: left;
   margin: 14px 0 0 6px;
@@ -196,7 +207,7 @@ header {
    margin: 14px 5px 0 0;
    border-radius: 5px;
    background: #fff;
-   border: 2px solid #E0DEDE;
+   border: 2px solid #aece24;
    display: inline-block;
  }
 
