@@ -1,0 +1,12 @@
+(function(ls){
+  /* writing to local storage */
+  ls['foo'] = 'bar';
+  ls.setItem('baz', 'quux');
+
+
+
+  /* reading from local storage */
+  console.log(ls.foo);
+  console.log(ls.getItem('baz'));
+
+}(window.localStorage));
