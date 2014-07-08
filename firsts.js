@@ -14,7 +14,7 @@ $('#add-new-icon').hover(
 // body on click
 $('body').click(function(e){
    if (e.target.tagName === 'BODY') { // if event target tagname is the body
-     console.log('close the new box!'); // console log something! (aka close the box)
+     $('#add-new-container').hide(); // console log something! (aka close the box)
    }
  });
 
@@ -46,10 +46,12 @@ $('input,textarea').focus(function(){
    $(this).removeAttr('placeholder');
 });
 
+
 // show and hide .new-tag-plus on click of .tag-icon-plus
 $('.tag-icon-plus').click(function(e) {
   e.preventDefault();
-  $(e.target).before('<input type="text" class="input-tag new-tag-plus" />');
+  $('.input-tag').show()
+  $(e.target).before('<input type="text" class="input-tag tag-icon-plus" />');
 });
 
 //local storage
@@ -95,6 +97,7 @@ $(document).ready(function(ls){
       listNav.prepend(markup.join(''));
       $('input').val(''); //clear inputs
       $('#add-new-container').toggle(); //hide "new" box
+
     };
   });
 
