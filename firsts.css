@@ -173,11 +173,8 @@ header {
 /**************ADD NEW**************/
 #add-new-container {
   width: 100%;
-  float: left;
   background-color: #fff;
   display: none;
-  position: relative;
-  z-index: 10;
   -webkit-box-shadow: 1px 5px 33px -11px rgba(65, 66, 66, 0.75);
   -moz-box-shadow: 1px 5px 33px -11px rgba(65, 66, 66, 0.75);
 }
